@@ -7,7 +7,6 @@ namespace SortApp
         static void Main(string[] args)
         {
             int[] numbers = new int[4] { 9, 0, 3, 1 };
-            int temp = 0;
 
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -15,7 +14,7 @@ namespace SortApp
                 {
                     if (numbers[j] < numbers[i])
                     {
-                        temp = numbers[i];
+                        int temp = numbers[i];
                         numbers[i] = numbers[j];
                         numbers[j] = temp;
                     }
