@@ -6,24 +6,12 @@ namespace SortApp
     {
         static void Main(string[] args)
         {
-            int[] numbers = new int[4] { 9, 0, 3, 1 };
+            Random rnd = new();
+            int countOfElements = rnd.Next(5, 25);
 
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                for (int j = i + 1; j < numbers.Length; j++)
-                {
-                    if (numbers[j] < numbers[i])
-                    {
-                        int temp = numbers[i];
-                        numbers[i] = numbers[j];
-                        numbers[j] = temp;
-                    }
-
-                }
-
-                Console.Write(numbers[i] + "\t");
-            }
-
+            BubbleSort numbers = new(countOfElements);
+            numbers.Sort();
+         
             Console.ReadKey();
         }
     }
