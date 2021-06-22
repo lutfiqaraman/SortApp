@@ -9,7 +9,6 @@ namespace SortApp
     public class BubbleSort
     {
         private readonly int Count;
-        private readonly List<int> numbers;
 
         public BubbleSort(int count)
         {

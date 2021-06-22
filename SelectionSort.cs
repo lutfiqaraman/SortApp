@@ -8,5 +8,16 @@ namespace SortApp
 {
     public class SelectionSort
     {
+        private readonly int Count;
+
+        public SelectionSort(int count)
+        {
+            Count = count;
+        }
+
+        public void Sort()
+        {
+            Console.WriteLine();
+        }
     }
 }
